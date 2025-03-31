@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace LINQ
 {
-    public class Program
+    public class Exercise2
     {
         public static void Main(string[] args)
         {
