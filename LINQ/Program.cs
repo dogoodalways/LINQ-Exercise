@@ -1,10 +1,14 @@
-﻿namespace LINQ
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQ
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            List<string> videoGames = new List<string>
+            List<string> games = new List<string>
             {
                 "Moshiach Man",
                 "Doing Good Deeds",
@@ -14,9 +18,10 @@
 
             };
 
-            var orderedGames  = videoGames.OrderBy(game => game.Length);
+            var orderedGames = games.OrderBy(game => game.Length);
 
-            foreach (var game in orderedGames )
+            Console.WriteLine("Games ordered by name length:");
+            foreach (var game in orderedGames)
             {
                 Console.WriteLine(game);
             }
